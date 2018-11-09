@@ -23,7 +23,7 @@ if (test)
   endif(NOT GTEST_FOUND)
   include_directories(${GTEST_INCLUDE_DIRS})
   add_executable(testGenSim src/test_main.cpp src/matrix.cpp)
-  target_link_libraries(testNetSim ${GTEST_BOTH_LIBRARIES} pthread)
+  target_link_libraries(testGenSim ${GTEST_BOTH_LIBRARIES} pthread)
   add_test(Network_simulation testNetSim)
 endif(test)
 
