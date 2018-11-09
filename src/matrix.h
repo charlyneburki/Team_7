@@ -12,6 +12,16 @@ class Matrix {
 	public:
 	
 	/*
+	 * @brief constructeur qui initialise une matrice nulle
+	 */
+	Matrix();
+	
+	/*
+	 * @brief constructeur qui initialise la matrice avec des valeurs
+	 */
+	Matrix(vector <vector <double> > m);
+	
+	/*
 	 * @brief Pour modifier une composante de la matrice
 	 * 
 	 * @param x la ligne de la composante

@@ -1,6 +1,19 @@
 #include "matrix.h"
 #include <cmath>
 
+
+Matrix::Matrix(){
+	for (size_t i(0); i < matrix.size() ; ++i){
+		for (size_t j(0); j < matrix[i].size() ; ++j){
+			matrix[i][j] = 0;
+		}
+	}
+}
+
+Matrix::Matrix(vector <vector <double> > m){
+	matrix = m;
+}
+
 void Matrix::set_component(size_t x, size_t y, double poids){
 	matrix[x][y] = poids;
 }
